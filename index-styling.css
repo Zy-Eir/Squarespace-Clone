@@ -35,6 +35,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1rem 1rem;
+    background-color: #000000;
 }
 
 .navbar-logo{
@@ -45,6 +46,19 @@ a{
     
     background-color: #000000;
 }
+
+.nav-dropdown-log-in-wrapper{
+    text-align: center;
+    margin-top: 14rem;
+}
+
+.nav-dropdown-log-in{
+    font-weight: bold;
+    padding: 3rem;
+    color: #ffffff;
+}
+
+
 
 .exit-button{
     padding: 1.25rem 1.5rem 6rem 0rem;
@@ -122,6 +136,13 @@ a{
     font-weight: bold;
 }
 
+.intro-little-text-2{
+    padding: 0rem 4rem 0rem 4rem;
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .carousel-container{
     text-align: center;
     color: #ffffff;
@@ -179,6 +200,10 @@ a{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 
+}
+
+.mobile-carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .sell-anything-container{
@@ -502,6 +527,10 @@ a{
     padding-left: 1rem;
 }
 
+.get-started-tablet-wrapper{
+    display: none;
+}
+
 @media (min-width: 768px){
 
     .nav-menu-dropdown-button{
@@ -528,12 +557,17 @@ a{
         display: none;
     }
 
+    .get-started-tablet-wrapper{
+        display: block;
+    }
+
     .get-started-tablet{
         padding: 1.5rem 2rem;
         background-color: white;
         font-size: 20px;
         font-weight: bold;
         color: black;
+       
     }
 
     .nav-bar-container{
@@ -548,6 +582,10 @@ a{
     background-size: cover;
     background-repeat: no-repeat;  
     background-position:  center;
+    }
+
+    .intro-big-text{
+        font-size: 55px;
     }
 
     .grow-business-container{
